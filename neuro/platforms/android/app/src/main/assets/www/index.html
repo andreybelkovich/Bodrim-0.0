@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+
+        <div id="topGreenBlock" style="margin:0;height:4vw;width:100vw;background: #03d379; display:block;"></div>
+        
+        <!-- блок главного списка тестов -->
+    	<div id="test_list" style="margin:0;height:84vh;width:100vw;background: white; display:block; overflow: scroll;"> 
+            <div id="firstSpaceTests" class="firstSpaceTests"></div>
+    		<!-- <button class="testButton">
+    		</button> -->
+    	</div>
+
+        <!-- блок редактирования списка тестов -->
+    	<div id="test_list_edit" style="margin: 0;height:84vh;width:100vw;background: white; display:none; overflow: scroll;">
+            <div id="firstSpaceTests" class="firstSpaceTests"></div>
+    		<!-- <button class="testButton_edit">
+    			<div class="testNameBut_edit">Тестовый тест</div>
+    			<button class="test_edit_toQuestion_button"></button>
+    			<button class="test_edit_delete_button"></button>
+    		</button> -->
+    	</div>
+
+        <!-- блок списка вопросов -->
+    	<div id="quest_list" style="margin:0; width:100vw; height:84vh; display:none;">
+            <div id="firstSpaceTests" style="margin:0;height:2vw;width:100vw;background: transparent; display:block;"></div>
+
+        	<!-- блок заголовка списка вопросов теста -->
+    		<div id="quest_list_name" style="margin-top: 0; margin-left: 6vw; width: 88vw; height: 28vw; border-bottom: 0.4vw solid black;">
+    			<div id="test_name_space_1" style="height:8.2vw;margin:0;"></div>
+    			<div id="testNameTop" class="testNameTop">Знаки в тональностях</div>
+    			<div id="testCountQuest" class="testCountQuest">13 вопросов</div>
+    		</div>
+
+			<!-- блок списка вопросов теста -->
+    		<div id="quest_list_scroll" style="margin: 0; height:71vh; overflow: scroll;">
+
+    			<!-- <div id="questBut" class="questBut">
+    				<div id="questSpace" class="questSpace"></div>
+    				<div id="questName" class="questName">Вопрос 1</div>
+    				<div id="editQuest" class="editQuest"></div>
+    				<div id="deleteQuest" class="deleteQuest"></div>
+    			</div> -->
+    			
+    		</div>
+    		
+    	</div>
+
+        <!-- блок создания вопроса -->
+        <div id="quest_create_space" style="margin: 0; width:100vw; height:84vh; display: none;">
+            <!-- <div id="secondSpaceTests" style="margin:0;height:1vh;width:100vw;background: transparent; display:block;"></div> -->
+            <!-- блок заголовка списка вопросов теста -->
+            <div id="quest_topic" style="margin-top: 0; margin-left: 0; width: 88vw; height: 37vw;">
+                <div id="test_name_space_1" style="height:8.2vw;margin:0;"></div>
+                <div id="createNameTop" class="createNameTop">Знаки в тональностях</div>
+                <div id="createСountQuest" class="createСountQuest">13 вопросов</div>
+                <div id="questionCreateSecondBlock" class="questionCreateSecondBlock">
+                    <!-- <div class="questionCreateNumber" id="questionCreateNumber">Вопрос 1</div> -->
+                    <div class="questionCreateName" id="questionCreateName">Что такое корейский алфавит?</div>
+                </div>
+            </div>
+
+            <!-- блок создания вопроса -->
+            <div id="quest_create_block" style="margin-top: 0.4vw; height:71vh; overflow: scroll;">
+
+                <!-- <div class="add_element_instruction" id="add_element_instruction">Добавьте текст, графику или аудио чтобы задать вопрос</div> -->
+
+                <!-- <div id="add_element_block" class="add_element_block">
+                    <button class="add_text" onclick="add_text_click()"></button>
+                    <button class="add_image" onclick="add_image_click()"></button>
+                    <button class="add_video" onclick="add_video_click()"></button>
+                    <button class="add_sound" onclick="add_sound_click()"></button>
+                    <button class="add_voice" onclick="add_voice_click()"></button>
+                </div> -->
+                
+            </div>
+            
+        </div>
+
+
+
+
+
+
+		<!-- блок нижней панели главного списка с тестами -->
+    	<div id="test_bottom_panel_main_page" class="test_bottom_panel_main_page">
+    		<div style="height:3.5vh;"></div>
+    		<button id="test_panel_button_edit_test" class="test_panel_button_edit_test" onclick="edit_tests()">
+    		</button>
+    		<!-- <button id="test_panel_button_add_test" class="test_panel_button_add_test" onclick="add_test()">
+    		</button> -->
+
+            <button class="test_panel_button_add_test_wide" id="test_panel_button_add_test_wide" onclick="add_test()">
+                Создать тест
+                <div class="test_panel_button_add_test_plus" id="test_panel_button_add_test_plus"></div>
+            </button>
+    	</div>
+
+		<!-- блок нижней панели редактирования главного списка с тестами -->
+    	<div id="test_bottom_panel_edit_tests" class="test_bottom_panel_edit_tests">
+    		<div style="height:3.5vh;"></div>
+    		<button id="test_panel_button_edit_test_filled" class="test_panel_button_edit_test_filled" onclick="edit_tests_back()">
+    		</button>
+    	</div>
+
+    	<!-- Панель ввода имени нового теста -->
+    	<div id="transparent_plate" class="transparent_plate"></div>
+    	<div id="test_bottom_panel_add_test" class="test_bottom_panel_add_test">
+    		<div style="height:8vw;"></div>
+    		<div class="nazvanie_label" id="nazvanie_label">Название</div>
+    		<input class="nazvanie_input" type="text" id="nazvanie_input" value="" onfocus="name_input_focus()" onfocusout="name_input_focusout()">
+    		<div class="create_new_test_button" id="create_new_test_button">
+    			<div class="create_new_test_text" id="create_new_test_text">Создать</div>
+    			<div class="create_new_test_next" id="create_new_test_next"></div>
+    		</div>
+    	</div>
+
+        <!-- Панель ввода заголовка нового вопроса -->
+        <div id="transparent_plate" class="transparent_plate"></div>
+        <div id="question_bottom_panel_add" class="test_bottom_panel_add_test">
+            <div style="height:8vw;"></div>
+            <div class="nazvanie_label" id="nazvanie_label_quest">Заголовок</div>
+            <input class="nazvanie_input" type="text" id="nazvanie_input_quest" value="" onfocus="name_input_focus_q()" onfocusout="name_input_focusout_q()">
+            <div class="create_new_test_button" id="create_new_quest_button">
+                <div class="create_new_test_text" id="create_new_quest_text">Добавить</div>
+                <div class="create_new_test_next" id="create_new_quest_next"></div>
+            </div>
+        </div>
+
+        <!-- блок нижней панели главного списка с вопросами -->
+        <div id="quest_bottom_panel_quest_list" class="quest_bottom_panel_quest_list">
+            <div style="height:3.5vh;"></div>
+            <button id="quest_panel_bottom_list_back" class="quest_panel_bottom_list_back" onclick="questListBack()">
+            </button>
+            <button class="quest_panel_button_add_test_wide" id="quest_panel_button_add_test_wide" onclick="add_quest()">
+                Добватить вопрос
+                <div class="quest_panel_button_add_test_plus" id="quest_panel_button_add_test_plus"></div>
+            </button>
+        </div>
+
+        <!-- блок нижней панели создания теста -->
+        <div id="quest_bottom_panel_create" class="quest_bottom_panel_quest_list">
+            <div style="height:3.5vh;"></div>
+            <button id="quest_panel_bottom_list_back" class="quest_panel_bottom_list_back" onclick="questListBack()">
+            </button>
+            <button class="quest_panel_button__create_question_wide " id="quest_panel_button__create_question_wide " onclick="add_quest()">
+                Ответ
+                <div class="quest_panel_button_create_question_plus" id="quest_panel_button_create_question_plus"></div>
+            </button>
+        </div>
+
+    	<!-- Панель списка вопросов в тесте -->
+    	<!-- <div class="quest_bottom_panel_quest_list" id="quest_bottom_panel_quest_list">
+    		<div style="height:3.5vh;"></div>
+    		<button id="quest_panel_bottom_list_back" class="quest_panel_bottom_list_back" onclick="questListBack()">
+    		</button>
+    	</div> -->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
