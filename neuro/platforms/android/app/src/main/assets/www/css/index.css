@@ -154,8 +154,8 @@ body
 {
     display: none;
     /*z-index: 10;*/
-    position:absolute;
-    background:transparent;
+    position: absolute;
+    background: transparent;
     height: 60vh;
     width: 100vw;
     margin-left: 0;
@@ -167,10 +167,10 @@ body
     position: absolute;
     display:none;
     /*z-index: 11;*/
-    margin-top:-26vh;
-    margin-left:0;
-    height:40vh;
-    width:100vw;
+    margin-top: -26vh;
+    margin-left: 0;
+    height: 40vh;
+    width: 100vw;
     background: white;
     box-shadow: 0 0 2vw 0vh rgba(0,0,0, 0.3);
 }
@@ -178,10 +178,10 @@ body
 .nazvanie_label
 {
     /*position: absolute;*/
-    margin-top:0vw;
-    margin-left:15vw;
-    height:6vw;
-    width:60vw;
+    margin-top: 0vw;
+    margin-left: 15vw;
+    height: 6vw;
+    width: 60vw;
     background-color: transparent;
     color: rgb(191,191,191);
     font-family:CintaLight;
@@ -191,17 +191,17 @@ body
 .nazvanie_input
 {
     /*position: absolute;*/
-    margin-top:0vw;
-    margin-left:15vw;
-    height:10vw;
-    width:65vw;
+    margin-top: 0vw;
+    margin-left: 15vw;
+    height: 10vw;
+    width: 65vw;
     background-color: transparent;
     color: black;
-    font-family:CintaBook;
+    font-family: CintaBook;
     font-size: 5vw;
-    border:none;
-    outline:none;
-    -webkit-user-select:none;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
 }
 
 .create_new_test_button
@@ -304,7 +304,91 @@ body
     background-color: transparent;
 }
 
-    /*панель списка вопросов в тесте === конец*/
+    /*=== панель списка вопросов в тесте === конец*/
+
+    /*=== панель добавления ответа ===*/
+
+.answer_bottom_panel_quest_list
+{
+    position:absolute;
+    display:none;
+    margin-top: -60vh;
+    margin-left: 0;
+    height:74vh;
+    width:100vw;
+    background: white;
+    box-shadow: 0 0 2vw 0vh rgba(0,0,0, 0.3);
+}
+
+.answer_panel_bottom_list_back
+{
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 11vw;
+    height: 7vh;
+    width: 7vh;
+    display: block;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+    background-image: url('../img/down.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+.otvet
+{
+    margin-left: 12vw;
+    height: 10vh;
+    line-height: 10vh;
+    width: 87vw;
+    font-family:CintaBook;
+    font-size: 5.5vw;
+    color: #bfbfbf;
+}
+
+.ans_type
+{
+    height: 12vh;
+    width: 100vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+    transition: all 0.3s ease;
+}
+.ans_type:active
+{
+    opacity: 0;
+}
+
+.text_label
+{
+    height:7vw;
+    /*line-height: 7vw;*/
+    width:70vw;
+    margin-left: 15vw;
+    font-family:CintaSemibold;
+    font-size: 5.5vw;
+    color: black;
+    text-align: left;
+    background-color: transparent;
+}
+
+.text_label_sub
+{
+    height:7vw;
+    /*line-height: 7vw;*/
+    width:70vw;
+    margin-left: 15vw;
+    font-family:CintaBook;
+    font-size: 4.5vw;
+    color: #bfbfbf;   
+    text-align: left;
+    background-color: transparent;
+}
+
+    /*=== панель добавления ответа === конец*/
 
 /*============ нижние панели ==== конец ===========================================*/
 
@@ -328,7 +412,7 @@ body
 {
     box-shadow: 0 0 4.8vw -3.4vw rgba(0,0,0, 1);
     background-color: white;
-    border:none;
+    border: none;
     outline: none;
     -webkit-user-select: none;
     margin-left: 5vw;
@@ -643,6 +727,7 @@ body
             text-indent: 3vw;
         }
 
+        /* блок добавления элемента */
         .add_element_block
         {
             margin-left: 6vw; 
@@ -747,13 +832,15 @@ body
             outline:none;
         }
 
+        /* блок текста */
         .text_block
         {
             margin-left: 6vw;
             height: auto;
-            width: 76vw;
+            width: 88vw;
             background-color: transparent;
-            padding: 6vw;
+            padding-bottom: 6vw;
+            /*padding: 6vw;*/
             /*color: black;
             font-family:CintaBook;
             font-size: 4.8vw;
@@ -767,16 +854,16 @@ body
             display: inline-block;
             height: auto;
             min-height: 13vw;
-            width:60vw;
+            width:69vw;
             background-color: transparent;
-            /*margin-top: 0;*/
+            margin-left: 6vw;
             /*margin-bottom: 0;*/
         }
 
         .text_block_input
         {
             height: auto;
-            width: 60vw;
+            width: 69vw;
             border: none;
             -webkit-user-select: none;
             outline: none;
@@ -817,11 +904,351 @@ body
         }
 
 
+        /*блок картинок*/
+        .image_block
+        {
+            margin-left: 6vw;
+            height: auto;
+            width: 88vw;
+            background-color: transparent;
+            padding-bottom: 6vw;  
+        }
+
+        .image_block_images
+        {
+            width: 88vw;
+            margin: 0;
+            height: auto;
+            /*height: 20vw;*/
+            background-color: transparent;
+        }
+
+        .image_block_one_image_container
+        {
+            width: auto;
+            height: auto;
+            margin: 0;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+
+            padding-right: 2vw;
+            padding-left: 2vw;
+
+            display: inline-block;
+
+            /*1, 2
+            padding-right: 4vw;
+            padding-left: 4vw;
+
+            /*3
+            padding-right: 2vw;
+            padding-left: 2vw;*/
+        }
+
+        .image_block_one_image_img
+        {
+            width: 25.3vw;
+            margin: 0;
+            height: auto;
+
+            /*1
+            width: 80vw;*/
+
+            /*2
+            width: 36vw;*/
+
+            /*3
+            width: 25.3vw;*/
+        }
+
+        .image_block_one_image_sign_delete_container
+        {
+            background-color: #bfbfbf;   
+            height: 7vw;
+            width: 14vw;
+            margin-top: 0vw;
+            margin-left: 0vw;
+            display: block;
+            border-radius: 3.5vw;
+        }
+
+        .image_block_one_image_sign
+        {
+            background-color: #bfbfbf;
+            border-radius: 3.5vw;
+            color: white;
+            height: 7vw;
+            width: 7vw;
+            /*margin-top: 4vw;*/
+            /*margin-left: 0vw;*/
+            font-family: CintaHeavy;
+            font-size: 4vw;
+            -webkit-user-select: none;
+            outline: none;
+            border: none;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .image_block_one_image_delete
+        {
+            background-image: url('../img/delete_image.png');
+            background-size: cover;
+            border-radius: 3.5vw;
+            background-color: #bfbfbf;
+            height: 7vw;
+            width: 7vw;
+            /*margin-top: -4vw;*/
+            /*margin-left: 0vw;*/
+            -webkit-user-select: none;
+            outline: none;
+            border: none;
+            display: inline-block;   
+        }
+
+        .image_block_panel
+        {
+           /*margin-left: 6vw;*/
+           height: 13vw;
+           width: 88vw;
+           background-color: transparent;
+           /*padding-bottom: 6vw;*/
+        }
+
+        .image_block_add_image
+        {
+           margin: 0;
+           padding: 0;
+           -webkit-user-select: none;
+           outline: none;
+           border: none;
+           height: 13vw;
+           width: 13vw;
+           background-image: url('../img/add image.png');
+           background-size: cover;
+           background-color: transparent;
+           display: block;
+        }
+
+        .image_block_scale_text
+        {
+           margin-top: -13vw;
+           margin-left: 18vw;
+           height: 13vw;
+           width: 25vw;
+           text-align: right;
+           line-height: 13vw;
+           color: #bfbfbf;
+           font-family:CintaBook;
+           font-size: 5vw;
+           background-color: transparent;
+           display: block;
+           /*color: black;*/
+        }
+
+        .image_block_scale
+        {
+           margin-top: -13vw;
+           margin-left: 45vw;
+           height: 13vw;
+           width: 20vw;
+           background-color: transparent;
+           display: block;
+        }
+
+        .image_block_plus
+        {
+           margin-top: 3vw;
+           margin-left: 2vw;
+           padding: 0;
+           -webkit-user-select: none;
+           outline: none;
+           border: none;
+           height: 7vw;
+           width: 7vw;
+           background-image: url('../img/scale_plus.png');
+           background-size: cover;
+           background-color: transparent;
+           display: inline-block;
+           opacity: 0.5;
+        }
+
+        .image_block_minus
+        {
+           margin-top: 3vw;
+           margin-left: 4vw;
+           padding: 0;
+           -webkit-user-select: none;
+           outline: none;
+           border: none;
+           height: 7vw;
+           width: 7vw;
+           background-image: url('../img/scale_minus.png');
+           background-size: cover;
+           background-color: transparent;
+           display: inline-block;
+           opacity: 1;
+        }
+
+        .image_block_delete
+        {
+           margin-top: -13vw;
+           margin-left: 75vw;
+           padding: 0;
+           -webkit-user-select: none;
+           outline: none;
+           border: none;
+           height: 13vw;
+           width: 13vw;
+           background-image: url('../img/delete.png');
+           background-size: cover;
+           background-color: transparent;
+           display: block;
+        }
+
+
+
+
+        /* блок видео*/
+
+        .video_block
+        {
+            margin-left: 6vw;
+            height: auto;
+            /*height: 10vw;*/
+            width: 88vw;
+            background-color: transparent;
+            padding-bottom: 6vw;  
+        }
+
+        .video_block_video
+        {
+            width: 80vw;
+            padding-left: 4vw;
+            padding-top: 4vw;
+            background-color: transparent;
+        }
+
+        .video_block_panel
+        {
+           /*margin-left: 6vw;*/
+           height: 13vw;
+           width: 88vw;
+           background-color: transparent;
+           /*padding-bottom: 6vw;*/
+        }
+
+        .video_block_delete
+        {
+           margin-top: 0vw;
+           margin-left: 75vw;
+           padding: 0;
+           -webkit-user-select: none;
+           outline: none;
+           border: none;
+           height: 13vw;
+           width: 13vw;
+           background-image: url('../img/delete.png');
+           background-size: cover;
+           background-color: transparent;
+           display: block;
+        }
+
+
+
+
+        /* блок аудио*/
+
+        .audio_block
+        {
+            margin-left: 6vw;
+            height: auto;
+            /*height: 10vw;*/
+            width: 88vw;
+            background-color: transparent;
+            padding-bottom: 6vw;  
+        }
+
+        .audio_block_audio
+        {
+            width: 75vw;
+            /*height: 13vw;*/
+            /*padding-left: 4vw;*/
+            padding-top: 4vw;
+            display: block;
+            -webkit-user-select: none;
+            outline: none;
+        }
+
+        .audio_block_audio::-webkit-media-controls-mute-button {
+            display: none !important;
+        }
+
+        .audio_block_delete
+        {
+           margin-top: -13vw;
+           margin-left: 75vw;
+           padding: 0;
+           -webkit-user-select: none;
+           outline: none;
+           border: none;
+           height: 13vw;
+           width: 13vw;
+           background-image: url('../img/delete.png');
+           background-size: cover;
+           background-color: transparent;
+           display: block;
+        }
+
+
+        /* блок записи */
+
+        .record_block
+        {
+            margin-left: 6vw;
+            height: auto;
+            /*height: 10vw;*/
+            width: 88vw;
+            background-color: transparent;
+            padding-bottom: 6vw;  
+        }
+
+        .record_block_record
+        {
+            width: 75vw;
+            /*height: 13vw;*/
+            /*padding-left: 4vw;*/
+            padding-top: 4vw;
+            display: block;
+            -webkit-user-select: none;
+            outline: none;
+        }
+
+        .record_block_audio::-webkit-media-controls-mute-button {
+            display: none !important;
+        }
+
+        .record_block_delete
+        {
+           margin-top: -13vw;
+           margin-left: 75vw;
+           padding: 0;
+           -webkit-user-select: none;
+           outline: none;
+           border: none;
+           height: 13vw;
+           width: 13vw;
+           background-image: url('../img/delete.png');
+           background-size: cover;
+           background-color: transparent;
+           display: block;
+        }
+
 
 
 
         /*нижняя панель*/
-        .quest_panel_button__create_question_wide 
+        .quest_panel_button_create_question_wide 
         {
             background-color: transparent;
             border:none;
@@ -850,6 +1277,442 @@ body
             background-size: cover;
             background-color: transparent;
         }
+
+    /*=== панель текстового ответа ===*/
+
+.transparent_plate_ta
+{
+    display: none;
+    /*z-index: 10;*/
+    position: absolute;
+    background: transparent;
+    height: 60vh;
+    width: 100vw;
+    margin-left: 0;
+    margin-top: -86vh;
+}
+
+.test_bottom_panel_text_answer
+{
+    position: absolute;
+    display:none;
+    /*z-index: 11;*/
+    margin-top: -26vh;
+    margin-left: 0;
+    height: 40vh;
+    width: 100vw;
+    background: white;
+    box-shadow: 0 0 2vw 0vh rgba(0,0,0, 0.3);
+}
+
+.nazvanie_label_text_answer
+{
+    /*position: absolute;*/
+    margin-top: 0vw;
+    margin-left: 15vw;
+    height: 6vw;
+    width: 60vw;
+    background-color: transparent;
+    color: rgb(191,191,191);
+    font-family:CintaLight;
+    font-size: 5vw;
+}
+
+.text_answer_input
+{
+    /*position: absolute;*/
+    margin-top: 0vw;
+    margin-left: 15vw;
+    height: 10vw;
+    width: 65vw;
+    background-color: transparent;
+    color: black;
+    font-family: CintaBook;
+    font-size: 5vw;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+}
+
+.add_new_answer_button
+{
+    background-color: transparent;
+    height: 20vw;
+    width: 45vw;
+    margin-top: 8vw;
+    margin-left: 55vw;
+}
+
+.add_new_answer_text
+{
+    background-color: transparent;
+    height: 20vw;
+    width: 25vw;
+    margin-top: 0vw;
+    margin-left: 0vw;
+    line-height: 20vw;
+    font-family:CintaSemibold;
+    text-align: right;
+    font-size: 5vw;
+    color: rgb(191,191,191);
+}
+
+.add_new_answer_next
+{
+    /*position:absolute;*/
+    margin-top: -17.5vw;
+    margin-left: 25vw;
+    height:15vw;
+    width:15vw;
+    display: block;
+    border:none;
+    outline:none;
+    -webkit-user-select:none;
+    background-image: url('../img/next.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+    /*=== панель текстового ответа === конец ===*/
+
+
+    /*=== панель числового ответа ===*/
+
+.transparent_plate_na
+{
+    display: none;
+    position: absolute;
+    background: transparent;
+    height: 60vh;
+    width: 100vw;
+    margin-left: 0;
+    margin-top: -86vh;
+}
+
+.test_bottom_panel_number_answer
+{
+    position: absolute;
+    display:none;
+    /*z-index: 11;*/
+    margin-top: -26vh;
+    margin-left: 0;
+    height: 40vh;
+    width: 100vw;
+    background: white;
+    box-shadow: 0 0 2vw 0vh rgba(0,0,0, 0.3);
+}
+
+.nazvanie_label_number_answer
+{
+    /*position: absolute;*/
+    margin-top: 0vw;
+    margin-left: 15vw;
+    height: 6vw;
+    width: 60vw;
+    background-color: transparent;
+    color: rgb(191,191,191);
+    font-family:CintaLight;
+    font-size: 5vw;
+}
+
+.number_answer_input
+{
+    /*position: absolute;*/
+    margin-top: 0vw;
+    margin-left: 15vw;
+    height: 10vw;
+    width: 65vw;
+    background-color: transparent;
+    color: black;
+    font-family: CintaBook;
+    font-size: 5vw;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+}
+
+.add_new_number_answer_button
+{
+    background-color: transparent;
+    height: 20vw;
+    width: 45vw;
+    margin-top: 8vw;
+    margin-left: 55vw;
+}
+
+.add_new_answer_number
+{
+    background-color: transparent;
+    height: 20vw;
+    width: 25vw;
+    margin-top: 0vw;
+    margin-left: 0vw;
+    line-height: 20vw;
+    font-family:CintaSemibold;
+    text-align: right;
+    font-size: 5vw;
+    color: rgb(191,191,191);
+}
+
+.add_new_answer_number_next
+{
+    /*position:absolute;*/
+    margin-top: -17.5vw;
+    margin-left: 25vw;
+    height:15vw;
+    width:15vw;
+    display: block;
+    border:none;
+    outline:none;
+    -webkit-user-select:none;
+    background-image: url('../img/next.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+    /*=== панель числового ответа === конец ===*/
+
+
+    /*=== панель вариантов ответа ===*/
+
+.transparent_plate_va
+{
+    display: none;
+    position: absolute;
+    background: transparent;
+    height: 26vh;
+    width: 100vw;
+    margin-left: 0;
+    margin-top: -86vh;
+}
+
+.test_bottom_panel_variant_answer
+{
+    position: absolute;
+    display: none;
+    margin-top: -60vh;
+    margin-left: 0;
+    height: 74vh;
+    width: 100vw;
+    background: white;
+    box-shadow: 0 0 2vw 0vh rgba(0,0,0, 0.3);
+}
+
+.nazvanie_label_variant_answer
+{
+    margin-top: 0vw;
+    margin-left: 15vw;
+    height: 6vw;
+    width: 60vw;
+    background-color: transparent;
+    color: rgb(191,191,191);
+    font-family:CintaLight;
+    font-size: 5vw;
+}
+
+.add_new_answer_variant_next
+{
+    height:15vw;
+    width: auto;
+    line-height: 15vw;
+    font-family: CintaBook;
+    text-align: right;
+    font-size: 5vw;
+    display: inline-block;
+}
+
+.only_one_variant
+{
+    background-color: transparent;
+    height:13vw;
+    width:100vw;
+    margin-top: 0;
+    display: inline-block;
+    /*background-color: transparent;*/
+}
+
+.a_few_variants
+{
+    background-color: transparent;
+    height:13vw;
+    width:100vw;
+    margin-top: 0;
+    display: inline-block;
+    /*background-color: transparent;*/
+}
+
+.choose_only_one
+{
+    margin-top: 5vw;
+    margin-left: 12vw;
+    height: 5vw;
+    width: 5vw;
+    background-image: url('../img/i_am_choosen.png');
+    background-size: cover;
+    display: block;
+    /*display: inline-block;*/
+}
+
+.choose_a_few_variants
+{
+    margin-top: 5vw; 
+    margin-left: 12vw; 
+    height: 5vw; 
+    width: 5vw; 
+    background-image: url('../img/choose_me.png');
+    background-size: cover;
+    display: block;
+    /*display: inline-block;*/
+}
+
+.text_only_one
+{
+    background-color: transparent;
+    margin-top: -10vw;
+    margin-left: 20vw;
+    height:15vw;
+    width: 70vw;
+    line-height: 15vw;
+    font-family: CintaBook;
+    text-align: left;
+    font-size: 5vw;
+    /*display: inline-block;*/
+}
+
+.text_a_few_variants
+{
+    background-color: transparent;
+    margin-top: -10vw;
+    margin-left: 20vw;
+    height:15vw;
+    width: 70vw;
+    line-height: 15vw;
+    font-family: CintaBook;
+    text-align: left;
+    font-size: 5vw;
+    /*display: inline-block;*/
+}
+
+.add_new_variant_answer_button
+{
+    background-color: transparent;
+    height: 20vw;
+    width: 45vw;
+    /*margin-top: 8vw;*/
+    margin-left: 55vw;
+}
+
+.add_new_answer_variant
+{
+    background-color: transparent;
+    height: 20vw;
+    width: 25vw;
+    margin-top: 0vw;
+    margin-left: 0vw;
+    line-height: 20vw;
+    font-family:CintaSemibold;
+    text-align: right;
+    font-size: 5vw;
+    color: rgb(191,191,191);
+}
+
+.add_new_answer_variant_next
+{
+    /*position:absolute;*/
+    margin-top: -17.5vw;
+    margin-left: 25vw;
+    height:15vw;
+    width:15vw;
+    display: block;
+    border:none;
+    outline:none;
+    -webkit-user-select:none;
+    background-image: url('../img/next.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+.variants_space
+{
+    width: 100vw;
+    height: 65vw;
+    margin-top: 0vw;
+    margin-left: 0;
+    background-color: transparent;
+    overflow-y: scroll;
+}
+
+.add_variant_button
+{
+    margin-left: 25vw;
+    height:15vw;
+    width:50vw;
+    background-color: transparent;
+}
+
+.add_variant_button_text
+{
+    height: 15vw;
+    width: 40vw;
+    color: #bfbfbf;
+    line-height: 15vw;
+    font-family:CintaSemibold;
+    text-align: right;
+    font-size: 4.5vw;
+    display: block;
+    background-color: transparent;
+}
+
+.add_variant_button_plus
+{
+    margin-top: -12.5vw;
+    margin-left: 40vw;
+    height: 10vw;
+    width: 10vw;
+    background-image: url('../img/add image.png');
+    background-size: cover;
+    display: block;
+    background-color: transparent;
+}
+
+.variant_class
+{
+    height: 15vw;
+    width: 100vw;
+    background-color: transparent;
+}
+
+.variant_input
+{
+    margin-top: 0vw;
+    margin-left: 11vw;
+    height: 15vw;
+    width: 42vw;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    background-color: white;
+    color: black;
+    font-family: CintaBook;
+    font-size: 5vw;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+}
+
+.variant_schelk
+{
+    margin-top: -11.5vw;
+    margin-left: 55vw;
+    height: 7vw;
+    width: 14vw;
+    background-image: url('../img/var_no.png');
+    background-size: cover;
+}
+
+/*=== панель вариантов ответа === конец ===*/
 
 
 /* -------- Создание вопроса -------- конец --------*/

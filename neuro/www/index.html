@@ -142,15 +142,116 @@
             </button>
         </div>
 
-        <!-- блок нижней панели создания теста -->
+        <!-- блок нижней панели создания вопроса -->
         <div id="quest_bottom_panel_create" class="quest_bottom_panel_quest_list">
             <div style="height:3.5vh;"></div>
             <button id="quest_panel_bottom_list_back" class="quest_panel_bottom_list_back" onclick="questListBack()">
             </button>
-            <button class="quest_panel_button__create_question_wide " id="quest_panel_button__create_question_wide " onclick="add_quest()">
+            <button class="quest_panel_button_create_question_wide" id="quest_panel_button_create_question_wide " onclick="add_answer()">
                 Ответ
                 <div class="quest_panel_button_create_question_plus" id="quest_panel_button_create_question_plus"></div>
             </button>
+        </div>
+
+        <!-- блок нижней панели создания ответа -->
+        <div id="answer_bottom_panel_quest_list" class="answer_bottom_panel_quest_list">
+            <div class="otvet">Ответ</div>
+
+            <button id="ans_type" class="ans_type" onclick="text_type()">
+                <div class="text_label">
+                    Тектс
+                </div>
+                <div class="text_label_sub">
+                    Ответом на вопрос будет текст
+                </div>
+            </button>
+
+            <button id="ans_type" class="ans_type" onclick="number_type()">
+                <div class="text_label">
+                    Число
+                </div>
+                <div class="text_label_sub">
+                    Дайте числовой ответ
+                </div>
+            </button>
+
+            <button id="ans_type" class="ans_type" onclick="variant_type()">
+                <div class="text_label">
+                    Выбор варианта
+                </div>
+                <div class="text_label_sub">
+                    Выберите один или несколько возможных вариантов
+                </div>
+            </button>
+
+            <button id="ans_type" class="ans_type" onclick="without_type()">
+                <div class="text_label">
+                    Без ответа
+                </div>
+                <div class="text_label_sub">
+                    Вы сами решаете правильно ли вы ответили на вопрос
+                </div>
+            </button>
+
+            <div style="height:3.5vh;"></div>
+            <button id="answer_panel_bottom_list_back" class="answer_panel_bottom_list_back" onclick="questListBack()">
+            </button>
+        </div>
+
+        <!-- Панель ввода текстового ответа -->
+        <div id="transparent_plate_ta" class="transparent_plate_ta"></div>
+        <div id="test_bottom_panel_text_answer" class="test_bottom_panel_text_answer">
+            <div style="height: 8vw;"></div>
+            <div class="nazvanie_label_text_answer" id="nazvanie_label_text_answer">Текстовый ответ</div>
+            <input class="text_answer_input" type="text" id="text_answer_input" value="" onfocus="text_answer_input_focus()" onfocusout="text_answer_input_focusout()">
+            <div class="add_new_answer_button" id="add_new_answer_button" onclick="text_type_save()">
+                <div class="add_new_answer_text" id="add_new_answer_text">Сохранить</div>
+                <div class="add_new_answer_next" id="add_new_answer_next"></div>
+            </div>
+        </div>
+
+        <!-- Панель ввода числового ответа --> 
+        <div id="transparent_plate_na" class="transparent_plate_na"></div>
+        <div id="test_bottom_panel_number_answer" class="test_bottom_panel_number_answer">
+            <div style="height: 8vw;"></div>
+            <div class="nazvanie_label_number_answer" id="nazvanie_label_number_answer">Числовой ответ</div>
+            <input class="number_answer_input" type="number" id="number_answer_input" value="" onfocus="number_answer_input_focus()" onfocusout="number_answer_input_focusout()">
+            <div class="add_new_number_answer_button" id="add_new_number_answer_button" onclick="number_type_save()">
+                <div class="add_new_answer_number" id="add_new_answer_number">Сохранить</div>
+                <div class="add_new_answer_number_next" id="add_new_answer_number_next"></div>
+            </div>
+        </div>
+
+        <!-- Панель ввода вариантов ответа --> 
+        <div id="transparent_plate_va" class="transparent_plate_va"></div>
+        <div id="test_bottom_panel_variant_answer" class="test_bottom_panel_variant_answer">
+            <div style="height: 8vw;"></div>
+            <div class="nazvanie_label_variant_answer" id="nazvanie_label_variant_answer">Варианты ответа</div>
+
+            <div style="height: 5vw;"></div>
+
+            <div id="only_one_variant" class="only_one_variant">
+                <div id="choose_only_one" class="choose_only_one"></div>
+                <div id="text_only_one" class="text_only_one">Один вариант ответа</div>
+            </div>
+
+            <div id="a_few_variants" class="a_few_variants">
+                <div id="choose_a_few_variants" class="choose_a_few_variants"></div>
+                <div id="text_a_few_variants" class="text_a_few_variants">Несколько вариантов ответа</div>
+            </div>
+
+            <div style="height:7vw; width:84vw; margin-left:8vw; border-bottom: 0.3vw solid black; border-color: black;"></div>
+
+            <div class="variants_space" id="variants_space">
+                
+            </div>
+
+            <div style="height:6vw; width:84vw; margin-left:8vw; border-top: 0.3vw solid black; border-color: black;"></div>
+
+            <div class="add_new_variant_answer_button" id="add_new_variant_answer_button">
+                <div class="add_new_answer_variant" id="add_new_answer_variant">Сохранить</div>
+                <div class="add_new_answer_variant_next" id="add_new_answer_variant_next"></div>
+            </div>
         </div>
 
     	<!-- Панель списка вопросов в тесте -->
