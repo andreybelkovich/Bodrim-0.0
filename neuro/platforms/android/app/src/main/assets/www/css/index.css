@@ -397,6 +397,23 @@ body
 
 /*============ кнопки тестов ===============================================*/
 
+/*плашка на случай если тестов нет*/
+
+.plashka_na_sluchai_esli_testov_net
+{
+    margin-top: 30vw;
+    margin-left: 10vw;
+    height: 20vw;
+    width: 80vw;
+    background-color: transparent;
+    color: #bfbfbf;
+    font-family: CintaBook;
+    font-size: 5vw;
+    text-align: center;
+    -webkit-user-select: none;
+    outline: none;
+}
+
 /*кнопка теста*/
 
 .firstSpaceTests
@@ -691,8 +708,8 @@ body
             font-size: 4.5vw;
             margin-top: 2vw;
             margin-left: 6vw;
-            height:8vw;
-            width:25vw;
+            height: 8vw;
+            width: 50vw;
             border-bottom: 0.4vw solid black;
             text-indent: 3vw;
         }
@@ -1224,7 +1241,7 @@ body
             outline: none;
         }
 
-        .record_block_audio::-webkit-media-controls-mute-button {
+        .record_block_record::-webkit-media-controls-mute-button {
             display: none !important;
         }
 
@@ -1295,7 +1312,7 @@ body
 .test_bottom_panel_text_answer
 {
     position: absolute;
-    display:none;
+    display: none;
     /*z-index: 11;*/
     margin-top: -26vh;
     margin-left: 0;
@@ -1687,7 +1704,7 @@ body
     margin-top: 0vw;
     margin-left: 11vw;
     height: 15vw;
-    width: 42vw;
+    width: 47vw;
 
     text-overflow: ellipsis;
     overflow: hidden;
@@ -1705,14 +1722,853 @@ body
 .variant_schelk
 {
     margin-top: -11.5vw;
-    margin-left: 55vw;
+    margin-left: 60vw;
     height: 7vw;
     width: 14vw;
     background-image: url('../img/var_no.png');
     background-size: cover;
 }
 
+.variant_delete
+{
+    margin-top: -8.5vw;
+    margin-left: 80vw;
+    height: 10vw;
+    width: 10vw;
+    background-image: url('../img/delete.png');
+    background-size: cover;   
+}
+
 /*=== панель вариантов ответа === конец ===*/
 
 
 /* -------- Создание вопроса -------- конец --------*/
+
+/* -------- Перемешивать вопросы или нет -----------------------*/
+
+.mix_or_not_space
+{
+    margin: 0;
+    height: 84vh;
+    width: 100vw;
+    background: white; 
+    display: none; 
+    overflow: scroll;
+}
+
+.transparent_plate_da
+{
+    display: none;
+    position: absolute;
+    background: transparent;
+    height: 60vh;
+    width: 100vw;
+    margin-left: 0;
+    margin-top: -86vh;
+}
+
+.test_bottom_panel_da_answer
+{
+    position: absolute;
+    display:none;
+    /*z-index: 11;*/
+    margin-top: -26vh;
+    margin-left: 0;
+    height: 40vh;
+    width: 100vw;
+    background: white;
+    box-shadow: 0 0 2vw 0vh rgba(0,0,0, 0.3);
+}
+
+.nazvanie_label_da_answer
+{
+    /*position: absolute;*/
+    margin-top: 0vw;
+    margin-left: 15vw;
+    height: 6vw;
+    width: 60vw;
+    background-color: transparent;
+    color: rgb(191,191,191);
+    font-family:CintaLight;
+    font-size: 5vw;
+}
+
+.quest_panel_bottom_mix_back
+{
+    position: absolute;
+    margin-top: 0vh;
+    margin-left: 11vw;
+    height: 7vh;
+    width: 7vh;
+    display: block;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+.mix_it
+{
+    height: 14vw;
+    width: 100vw;
+    color: black;
+    background-color: transparent;
+    font-family: CintaBook;
+    font-size: 5vw;
+    text-align: left;
+    text-indent: 20vw;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+    transition: all 0.2s ease;
+}
+.mix_it:active
+{
+    /*opacity: 0;*/
+    margin-left: -3vw;
+}
+
+.don_t_mix_it
+{
+    height: 14vw;
+    width: 100vw;
+    color: black;
+    background-color: transparent;
+    font-family: CintaBook;
+    font-size: 5vw;
+    text-align: left;
+    text-indent: 20vw;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;    
+    transition: all 0.2s ease;
+}
+.don_t_mix_it:active
+{
+    /*opacity: 0;*/
+    margin-left: -3vw;
+}
+
+.start_test_name
+{
+    height:10vw;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 25vh;
+    color: black;
+    background-color: transparent;
+    font-family: CintaSemibold;
+    font-size: 5.3vw;
+    text-align: center;
+    line-height: 10vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.start_test_questions_num
+{
+    height: 7vw;
+    width: 100vw;
+    margin-left: 0;
+    margin-top: 0;
+    color: black;
+    background-color: transparent;
+    font-family: CintaBook;
+    font-size: 4.7vw;
+    text-align: center;
+    line-height: 7vw;
+}
+
+/* -------- Перемешивать вопросы или нет ---------- конец -------*/
+
+
+/* -------- Прохождение теста ----------------------*/
+
+
+    /*=== панель прохождения теста ===*/
+
+.quest_bottom_panel_test
+{
+    position: absolute;
+    display: none;
+    margin-top: 0;
+    margin-left: 0;
+    height: 14vh;
+    width: 100vw;
+    background: white;
+    box-shadow: 0 0 2vw 0vh rgba(0,0,0, 0.3);
+}
+
+.quest_panel_bottom_list_back_test
+{
+    position: absolute;
+    margin-top: 0vh;
+    margin-left: 11vw;
+    height: 7vh;
+    width: 7vh;
+    display: block;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+.quest_panel_button_create_question_wide_test
+{
+    background-color: transparent;
+    border:none;
+    outline: none;
+    -webkit-user-select: none;
+    margin-top: 0;
+    margin-left: 41vw;
+    height:7vh;
+    width:60vw;
+    text-align: center;
+    display: block;
+    color:#bfbfbf;
+    font-family:CintaSemibold;
+    font-size: 2.5vh;
+}
+
+.quest_panel_button_create_question_plus_test
+{
+    position:absolute;
+    margin-top: -2.5vh;
+    margin-left: 41vw;
+    height:2.2vh;
+    width:2.2vh;
+    background-image: url('../img/answer_up.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+    /*=== панель прохождения теста === конец*/
+
+    /*=== блок прохождения теста === */
+
+    .createNameTop_test
+    {
+        text-align: left;
+        color: black;
+        font-family:CintaHeavy;
+        font-size: 5.5vw;
+        margin-top: 0vw;
+        margin-left: 6vw;
+        height:6vw;
+        width:88vw;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        text-indent: 3vw;
+    }
+
+    .createСountQuest_test
+    {
+        text-align: 0.1vw left;
+        /*color: #00b050;*/
+        color: black;
+        font-family:CintaBook;
+        font-size: 4.5vw;
+        margin-top: 2vw;
+        margin-left: 6vw;
+        height:8vw;
+        width:50vw;
+        border-bottom: 0.4vw solid black;
+        text-indent: 3vw;
+    }
+
+    .questionCreateSecondBlock_test
+    {
+        text-align: 0.1vw left;
+        /*color: #00b050;*/
+        color: black;
+        font-family:CintaBook;
+        font-size: 5.5vw;
+        margin-top: 0vw;
+        margin-left: 6vw;
+        height: 12.4vw;
+        width: 88vw;
+        border-bottom: 0.4vw solid black;
+    }
+
+    .questionCreateName_test
+    {
+        color: black;
+        font-family:CintaBook;
+        font-size: 5.5vw;
+        margin-top: 0vw;
+        margin-left: 0vw;
+        height: 12.4vw;
+        width: 88vw;
+        line-height: 12.4vw;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        text-indent: 3vw;
+    }
+
+        .add_element_instruction_test
+        {
+            margin-left: 6vw;
+            width: 76vw;
+            height: 0vw;
+            background-color: transparent;
+            color: #7f7f7f;
+            font-family:CintaBook;
+            font-size: 4.8vw;
+            padding-left: 6vw;
+            padding-right: 6vw;
+            padding-top: 10vw;
+            vertical-align: middle;
+        }
+
+        .text_block_input_div_test
+        {
+            display: inline-block;
+            height: auto;
+            min-height: 13vw;
+            width: 76vw;
+            background-color: transparent;
+            margin-left: 6vw;
+            /*margin-bottom: 0;*/
+        }
+
+        .text_block_input_test
+        {
+            height: auto;
+            width: 76vw;
+            border: none;
+            -webkit-user-select: none;
+            outline: none;
+            color: black;
+            resize: none;
+            display: block;
+            background-color: transparent;
+            font-family: CintaBook;
+            font-size: 4.8vw;
+        }
+
+        .image_block_one_image_sign_delete_container_test
+        {
+            background-color: #bfbfbf;   
+            height: 7vw;
+            width: 7vw;
+            margin-top: 0vw;
+            margin-left: 0vw;
+            display: block;
+            border-radius: 3.5vw;
+        }
+
+        .audio_block_audio_test
+        {
+            width: 88vw;
+            /*height: 13vw;*/
+            /*padding-left: 4vw;*/
+            padding-top: 4vw;
+            display: block;
+            -webkit-user-select: none;
+            outline: none;
+        }
+
+        .audio_block_audio_test::-webkit-media-controls-mute-button {
+            display: none !important;
+        }
+
+        .record_block_record_test
+        {
+            width: 88vw;
+            /*height: 13vw;*/
+            /*padding-left: 4vw;*/
+            padding-top: 4vw;
+            display: block;
+            -webkit-user-select: none;
+            outline: none;
+        }
+
+        .record_block_record_test::-webkit-media-controls-mute-button {
+            display: none !important;
+        }
+
+        /*=== блок прохождения теста === */
+
+    /*=== панель ввода вариантов ответа при прохождении ===*/
+
+.transparent_plate_vit
+{
+    display: none;
+    position: absolute;
+    background: transparent;
+    height: 40vh;
+    width: 100vw;
+    margin-left: 0;
+    margin-top: -86vh;
+}
+
+.test_bottom_panel_variant_started
+{
+    position: absolute;
+    display: none;
+    margin-top: -46vh;
+    margin-left: 0;
+    height: 60vh;
+    width: 100vw;
+    background: white;
+    box-shadow: 0 0 2vw 0vh rgba(0,0,0, 0.3);
+}
+
+.nazvanie_label_variant_started
+{
+    margin-top: 0vw;
+    margin-left: 8vw;
+    height: 6vw;
+    width: 84vw;
+    background-color: transparent;
+    color: rgb(191,191,191);
+    font-family:CintaLight;
+    font-size: 5vw;
+}
+
+.variants_space_started
+{
+    width: 100vw;
+    height: 67vw;
+    margin-top: 0vw;
+    margin-left: 0;
+    background-color: transparent;
+    overflow-y: scroll;
+}
+
+.add_new_started_button
+{
+    background-color: transparent;
+    height: 20vw;
+    width: 45vw;
+    margin-top: 3vw;
+    margin-left: 55vw;
+}
+
+.variant_started_box
+{
+    background-color: transparent;
+    height: 11vw;
+    width: 100vw;
+
+    display: inline-block;
+    margin-top: 0vw;
+    /*margin-left: 55vw;*/
+}
+
+.variant_started_sign
+{
+    margin-top: 3vw;
+    margin-left: 12vw;
+    height: 5vw;
+    width: 5vw;
+    background-image: url('../img/choose_me.png');
+    background-size: cover;
+    display: block;
+    background-color: transparent;
+}
+
+.variant_started_text
+{
+    background-color: transparent;
+    font-family: CintaBook;
+    font-size: 5vw;
+    height: 11vw;
+    width: 55vw;
+    margin-top: -8vw;
+    margin-left: 27vw;
+    line-height: 11vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    /*background-color: white;*/
+    color: black;
+    display: block;
+}
+
+    /*=== панель ввода вариантов ответа при прохождении === конец ===*/
+
+    /*=== панель без ответа при прохождении ===*/
+
+.i_was_right
+{
+    height: 14vw;
+    width: 100vw;
+    color: black;
+    background-color: transparent;
+    font-family: CintaBook;
+    font-size: 5vw;
+    text-align: left;
+    text-indent: 15vw;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+    transition: all 0.2s ease;
+}
+.i_was_right:active
+{
+    /*opacity: 0;*/
+    margin-left: -3vw;
+}
+
+.i_was_wrong
+{
+    height: 14vw;
+    width: 100vw;
+    color: black;
+    background-color: transparent;
+    font-family: CintaBook;
+    font-size: 5vw;
+    text-align: left;
+    text-indent: 15vw;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;    
+    transition: all 0.2s ease;
+}
+.i_was_wrong:active
+{
+    /*opacity: 0;*/
+    margin-left: -3vw;
+}
+
+    /*=== панель без ответа при прохождении === конец ===*/
+
+    /*=== итоги теста ===*/
+
+.quest_panel_button_create_question_plus_test_end
+{
+    position:absolute;
+    margin-top: -2.5vh;
+    margin-left: 41vw;
+    height:2.2vh;
+    width:2.2vh;
+    background-image: url('../img/next_close.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+.result_main_label
+{
+    margin-left: 0;
+    margin-top: 16.5vh;
+    width: 100vw;
+    height: 12vw;
+    background-color: transparent;
+    color: black;
+    font-family: CintaBook;
+    font-size: 12vw;
+    text-align: center;
+}
+
+.result_sub_label
+{
+    margin-left: 0;
+    margin-top: 5vw;
+    width: 100vw;
+    height: 9vw;
+    background-color: transparent;
+    color: #bfbfbf;
+    font-family: CintaBook;
+    font-size: 9vw;
+    text-align: center;   
+}
+
+.result_show
+{
+    margin-left: 0;
+    margin-top: 18vw;
+    width: 100vw;
+    height: 9vw;
+    background-color: transparent;
+    color: #bfbfbf;
+    font-family: CintaLight;
+    font-size: 5.2vw;
+    text-align: center;   
+}
+
+.answer_check
+{
+    height: 13vw;
+    width: 100vw;
+    background-color: ;
+    display: inline-block;
+}
+
+.answer_check_next
+{
+    margin-top: 0vw;
+    margin-left: 4vw;
+    height: 13vw;
+    width: 13vw;
+    display: block;
+    background-image: url('../img/next black.png');
+    background-size: cover;   
+}
+
+.answer_check_text
+{
+    margin-top: -13vw;
+    margin-left: 15vw;
+    height: 13vw;
+    width: 55vw;
+    line-height: 13vw;
+    display: block;
+    color: black;
+    font-family: CintaSemibold;
+    font-size: 5.3vw;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.answer_check_sign
+{
+    margin-top: -13vw;
+    margin-left: 75vw;
+    height: 13vw;
+    width: 13vw;
+    display: block;
+    /*background-image: url('../img/right.png');*/
+    background-size: cover;
+}
+
+.answer_bottom_panel_quest_real
+{
+    position:absolute;
+    display:none;
+    margin-top: -36vh;
+    margin-left: 0;
+    height: 50vh;
+    width: 100vw;
+    background: white;
+    box-shadow: 0 0 2vw 0vh rgba(0,0,0, 0.3);
+}
+
+.answer_panel_bottom_real_back
+{
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 11vw;
+    height: 7vh;
+    width: 7vh;
+    display: block;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+.question_again
+{
+    height: 13vw;
+    width: 70vw;
+    margin-left: 9vw;
+    margin-top: 3vw;
+    background-color: transparent;
+    line-height: 13vw;
+    color: black;
+    font-family: CintaSemibold;
+    font-size: 5vw;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.question_again_next
+{
+    margin-top: -13vw;
+    margin-left: 80vw;
+    height: 13vw;
+    width: 13vw;
+    display: block;
+    background-image: url('../img/next black.png');
+    background-size: cover;   
+}
+
+.question_again_your_label
+{
+    height: 7vw;
+    width: 70vw;
+    margin-left: 9vw;
+    margin-top: 3vw;
+    background-color: transparent;
+    line-height: 7vw;
+    color: #bfbfbf;
+    font-family: CintaLight;
+    font-size: 5vw;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.question_again_your
+{
+    height: 7vw;
+    width: 91vw;
+    margin-left: 9vw;
+    margin-top: 0vw;
+    background-color: transparent;
+    line-height: 7vw;
+    color: black;
+    font-family: CintaBook;
+    font-size: 5vw;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.question_again_real_label
+{
+    height: 7vw;
+    width: 70vw;
+    margin-left: 9vw;
+    margin-top: 7vw;
+    background-color: transparent;
+    line-height: 7vw;
+    color: #bfbfbf;
+    font-family: CintaLight;
+    font-size: 5vw;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.question_again_real
+{
+    height: 7vw;
+    width: 91vw;
+    margin-left: 9vw;
+    margin-top: 0vw;
+    background-color: transparent;
+    line-height: 7vw;
+    color: black;
+    font-family: CintaBook;
+    font-size: 5vw;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.question_again_back
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+    margin-top: 25vw;
+    margin-left: 43vw;
+    height:7vh;
+    width:60vw;
+    /*text-align: ;*/
+    text-indent: -10vw;
+    display: block;
+    color:#bfbfbf;
+    font-family: CintaSemibold;
+    font-size: 2.5vh;
+}
+
+.question_again_back_no
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+    margin-top: 46vw;
+    margin-left: 43vw;
+    height:7vh;
+    width:60vw;
+    /*text-align: ;*/
+    text-indent: -10vw;
+    display: block;
+    color:#bfbfbf;
+    font-family: CintaSemibold;
+    font-size: 2.5vh;
+}
+
+.question_again_back_arrow
+{
+    position:absolute;
+    margin-top: -2.5vh;
+    margin-left: 41vw;
+    height:2.2vh;
+    width:2.2vh;
+    background-image: url('../img/answer_down.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+.question_again_your_no
+{
+    height: 7vw;
+    width: 91vw;
+    margin-left: 9vw;
+    margin-top: 0vw;
+    background-color: transparent;
+    line-height: 7vw;
+    color: black;
+    font-family: CintaBook;
+    font-size: 5vw;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.variants_space_again
+{
+    width: 100vw;
+    height: 54vw;
+    margin-top: 0vw;
+    margin-left: 0;
+    background-color: transparent;
+    overflow-y: scroll;
+}
+
+.question_again_back_var
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+    margin-top: 0vw;
+    margin-left: 43vw;
+    height:7vh;
+    width:60vw;
+    /*text-align: ;*/
+    text-indent: -10vw;
+    display: block;
+    color:#bfbfbf;
+    font-family: CintaSemibold;
+    font-size: 2.5vh;
+}
+
+.variant_started_right
+{
+    margin-top: -11vw;
+    margin-left: 75vw;
+    height: 11vw;
+    width: 11vw;
+    display: block;
+    /*background-image: url('../img/right.png');*/
+    background-size: cover;
+}
+
+    /*=== итоги теста === конец ===*/
+
+/* -------- Прохождение теста --------- конец -------*/

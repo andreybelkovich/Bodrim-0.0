@@ -9,7 +9,7 @@
         <div id="topGreenBlock" style="margin:0;height:4vw;width:100vw;background: #03d379; display:block;"></div>
         
         <!-- блок главного списка тестов -->
-    	<div id="test_list" style="margin:0;height:84vh;width:100vw;background: white; display:block; overflow: scroll;"> 
+    	<div id="test_list" style="margin: 0; height: 84vh; width: 100vw; background: white; display: block; overflow: scroll;">
             <div id="firstSpaceTests" class="firstSpaceTests"></div>
     		<!-- <button class="testButton">
     		</button> -->
@@ -65,7 +65,7 @@
             </div>
 
             <!-- блок создания вопроса -->
-            <div id="quest_create_block" style="margin-top: 0.4vw; height:71vh; overflow: scroll;">
+            <div id="quest_create_block" style="margin-top: 0.4vw; height:65vh; overflow: scroll;">
 
                 <!-- <div class="add_element_instruction" id="add_element_instruction">Добавьте текст, графику или аудио чтобы задать вопрос</div> -->
 
@@ -80,6 +80,100 @@
             </div>
             
         </div>
+
+        <!-- блок спрашивалки перемешивать ли вопросы -->
+        <div id="mix_or_not_space" class="mix_or_not_space">
+            <div class="start_test_name" id="start_test_name"></div>
+            <div class="start_test_questions_num" id="start_test_questions_num"></div>
+        </div>
+
+        <!-- блок вопроса при прохождении теста -->
+        <div id="quest_create_space_test" style="margin: 0; width:100vw; height:84vh; display: none;">
+            <!-- <div id="secondSpaceTests" style="margin:0;height:1vh;width:100vw;background: transparent; display:block;"></div> -->
+            <!-- блок заголовка списка вопросов теста -->
+            <div id="quest_topic_test" style="margin-top: 0; margin-left: 0; width: 88vw; height: 37vw;">
+                <div id="test_name_space_1_test" style="height:8.2vw;margin:0;"></div>
+                <div id="createNameTop_test" class="createNameTop_test">Знаки в тональностях</div>
+                <div id="createСountQuest_test" class="createСountQuest_test">13 вопросов</div>
+                <div id="questionCreateSecondBlock_test" class="questionCreateSecondBlock_test">
+                    <!-- <div class="questionCreateNumber" id="questionCreateNumber">Вопрос 1</div> -->
+                    <div class="questionCreateName_test" id="questionCreateName_test">Что такое корейский алфавит?</div>
+                </div>
+            </div>
+
+            <!-- блок создания вопроса -->
+            <div id="quest_create_block_test" style="margin-top: 0.4vw; height:65vh; overflow: scroll;">
+
+                <!-- <div class="add_element_instruction" id="add_element_instruction">Добавьте текст, графику или аудио чтобы задать вопрос</div> -->
+
+                <!-- <div id="add_element_block" class="add_element_block">
+                    <button class="add_text" onclick="add_text_click()"></button>
+                    <button class="add_image" onclick="add_image_click()"></button>
+                    <button class="add_video" onclick="add_video_click()"></button>
+                    <button class="add_sound" onclick="add_sound_click()"></button>
+                    <button class="add_voice" onclick="add_voice_click()"></button>
+                </div> -->
+                
+            </div>
+        </div>
+
+        <!-- блок подведения итога тестирования -->
+        <div id="quest_end_space" style="margin: 0; width:100vw; height:84vh; display: none;">
+            <!-- <div id="secondSpaceTests" style="margin:0;height:1vh;width:100vw;background: transparent; display:block;"></div> -->
+            <!-- блок заголовка списка вопросов теста -->
+            <div id="quest_topic_end" style="margin-top: 0; margin-left: 0; width: 88vw; height: 37vw;">
+                <div id="test_name_space_1" style="height:8.2vw;margin:0;"></div>
+                <div id="createNameTop_end" class="createNameTop">Знаки в тональностях</div>
+                <div id="createСountQuest_end" class="createСountQuest">13 вопросов</div>
+                <div id="questionCreateSecondBlock" class="questionCreateSecondBlock">
+                    <!-- <div class="questionCreateNumber" id="questionCreateNumber">Вопрос 1</div> -->
+                    <div class="questionCreateName" id="questionCreateName_end">Что такое корейский алфавит?</div>
+                </div>
+            </div>
+
+            <!-- блок итогов вопроса -->
+            <div id="quest_end_block_result" style="margin-top: 0.4vw; height:65vh; overflow: scroll;">
+
+                <div class="result_main_label" id="result_main_label">8/11</div>
+                <div class="result_sub_label" id="result_sub_label">73%</div>
+                <div class="result_show" id="result_show">Показать ответы</div>
+                
+            </div>
+            
+        </div>
+
+        <!-- блок вопроса при проверке результата -->
+        <div id="quest_create_space_result" style="margin: 0; width:100vw; height:84vh; display: none;">
+            <!-- <div id="secondSpaceTests" style="margin:0;height:1vh;width:100vw;background: transparent; display:block;"></div> -->
+            <!-- блок заголовка списка вопросов теста -->
+            <div id="quest_topic_result" style="margin-top: 0; margin-left: 0; width: 88vw; height: 37vw;">
+                <div id="test_name_space_1_result" style="height:8.2vw;margin:0;"></div>
+                <div id="createNameTop_result_again" class="createNameTop_test">Знаки в тональностях</div>
+                <div id="createСountQuest_result_again" class="createСountQuest_test">13 вопросов</div>
+                <div id="questionCreateSecondBlock_result" class="questionCreateSecondBlock_test">
+                    <!-- <div class="questionCreateNumber" id="questionCreateNumber">Вопрос 1</div> -->
+                    <div class="questionCreateName_test" id="questionCreateName_result_again">Что такое корейский алфавит?</div>
+                </div>
+            </div>
+
+            <!-- блок создания вопроса -->
+            <div id="quest_create_block_result_again" style="margin-top: 0.4vw; height:65vh; overflow: scroll;">
+
+                <!-- <div class="add_element_instruction" id="add_element_instruction">Добавьте текст, графику или аудио чтобы задать вопрос</div> -->
+
+                <!-- <div id="add_element_block" class="add_element_block">
+                    <button class="add_text" onclick="add_text_click()"></button>
+                    <button class="add_image" onclick="add_image_click()"></button>
+                    <button class="add_video" onclick="add_video_click()"></button>
+                    <button class="add_sound" onclick="add_sound_click()"></button>
+                    <button class="add_voice" onclick="add_voice_click()"></button>
+                </div> -->
+                
+            </div>
+        </div>
+
+
+
 
 
 
@@ -123,7 +217,7 @@
         <div id="transparent_plate" class="transparent_plate"></div>
         <div id="question_bottom_panel_add" class="test_bottom_panel_add_test">
             <div style="height:8vw;"></div>
-            <div class="nazvanie_label" id="nazvanie_label_quest">Заголовок</div>
+            <div class="nazvanie_label" id="nazvanie_label_quest">Заголовок вопроса</div>
             <input class="nazvanie_input" type="text" id="nazvanie_input_quest" value="" onfocus="name_input_focus_q()" onfocusout="name_input_focusout_q()">
             <div class="create_new_test_button" id="create_new_quest_button">
                 <div class="create_new_test_text" id="create_new_quest_text">Добавить</div>
@@ -137,7 +231,7 @@
             <button id="quest_panel_bottom_list_back" class="quest_panel_bottom_list_back" onclick="questListBack()">
             </button>
             <button class="quest_panel_button_add_test_wide" id="quest_panel_button_add_test_wide" onclick="add_quest()">
-                Добватить вопрос
+                Добавить вопрос
                 <div class="quest_panel_button_add_test_plus" id="quest_panel_button_add_test_plus"></div>
             </button>
         </div>
@@ -243,25 +337,176 @@
             <div style="height:7vw; width:84vw; margin-left:8vw; border-bottom: 0.3vw solid black; border-color: black;"></div>
 
             <div class="variants_space" id="variants_space">
-                
             </div>
 
             <div style="height:6vw; width:84vw; margin-left:8vw; border-top: 0.3vw solid black; border-color: black;"></div>
 
-            <div class="add_new_variant_answer_button" id="add_new_variant_answer_button">
+            <div class="add_new_variant_answer_button" id="add_new_variant_answer_button" onclick="variant_type_save()">
                 <div class="add_new_answer_variant" id="add_new_answer_variant">Сохранить</div>
                 <div class="add_new_answer_variant_next" id="add_new_answer_variant_next"></div>
             </div>
         </div>
 
-    	<!-- Панель списка вопросов в тесте -->
-    	<!-- <div class="quest_bottom_panel_quest_list" id="quest_bottom_panel_quest_list">
-    		<div style="height:3.5vh;"></div>
-    		<button id="quest_panel_bottom_list_back" class="quest_panel_bottom_list_back" onclick="questListBack()">
-    		</button>
-    	</div> -->
+
+        <!-- Панель перемешать да/нет -->
+        <div id="transparent_plate_da" class="transparent_plate_da"></div>
+        <div id="test_bottom_panel_da_answer" class="test_bottom_panel_da_answer">
+            <div style="height: 8vw;"></div>
+            <div class="nazvanie_label_da_answer" id="nazvanie_label_da_answer">Перемешать вопросы?</div>
+
+            <div style="height: 4vw;"></div>
+
+            <button class="mix_it" id="mix_it" onclick="mix_it_func()">Да</button>
+            <button class="don_t_mix_it" id="don_t_mix_it" onclick="don_t_mix_it_func()">Нет</button>
+
+            <div style="height: 12vw;"></div>
+            
+            <button id="quest_panel_bottom_mix_back" class="quest_panel_bottom_mix_back" onclick="questListBack()"></button>
+        </div>
+
+        <!-- блок нижней панели прохождения вопроса -->
+        <div id="quest_bottom_panel_test" class="quest_bottom_panel_test">
+            <div style="height:3.5vh;"></div>
+            <button id="quest_panel_bottom_list_back_test" class="quest_panel_bottom_list_back_test" onclick="questListBack()"></button>
+            <button class="quest_panel_button_create_question_wide_test" id="quest_panel_button_create_question_wide_test" onclick="answer_the_question()">
+                Ответить
+                <div class="quest_panel_button_create_question_plus_test" id="quest_panel_button_create_question_plus_test"></div>
+            </button>
+        </div>
+
+
+        <!-- Прохождение теста!!! -->
+
+        <!-- Панель текстового ответа при прохождении -->
+        <div id="transparent_plate_tit" class="transparent_plate_ta"></div>
+        <div id="test_bottom_panel_text_started" class="test_bottom_panel_text_answer">
+            <div style="height: 8vw;"></div>
+            <div class="nazvanie_label_text_answer" id="nazvanie_label_text_started">Текстовый ответ</div>
+            <input class="text_answer_input" type="text" id="text_started_input" value="" onfocus="text_started_input_focus()" onfocusout="text_started_input_focusout()">
+            <div class="add_new_answer_button" id="add_new_started_button" onclick="next_question(0)">
+                <div class="add_new_answer_text" id="add_new_answer_text">Следующий</div>
+                <div class="add_new_answer_next" id="add_new_answer_next"></div>
+            </div>
+        </div>
+
+        <!-- Панель числового ответа при прохождении -->
+        <div id="transparent_plate_nit" class="transparent_plate_ta"></div>
+        <div id="test_bottom_panel_number_started" class="test_bottom_panel_text_answer">
+            <div style="height: 8vw;"></div>
+            <div class="nazvanie_label_text_answer" id="nazvanie_label_number_started">Числовой ответ</div>
+            <input class="text_answer_input" type="number" id="number_started_input" value="" onfocus="number_started_input_focus()" onfocusout="number_started_input_focusout()">
+            <div class="add_new_answer_button" id="add_new_number_started_button" onclick="next_question(1)">
+                <div class="add_new_answer_text" id="add_new_answer_text">Следующий</div>
+                <div class="add_new_answer_next" id="add_new_answer_next"></div>
+            </div>
+        </div>
+
+        <!-- Панель вариантов ответа при прохождении -->
+        <div id="transparent_plate_vit" class="transparent_plate_vit"></div>
+        <div id="test_bottom_panel_variant_started" class="test_bottom_panel_variant_started">
+            <div style="height: 8vw;"></div>
+            <div class="nazvanie_label_variant_started" id="nazvanie_label_variant_started">Варианты ответа</div>
+
+            <div style="height: 4vw; width:84vw; margin-left:8vw; border-bottom: 0.3vw solid black; border-color: black;"></div>
+
+            <div class="variants_space_started" id="variants_space_started">
+                <!-- <div style="height: 6vw; width:100vw;"></div> -->
+            </div>
+
+            <div style="height: 6vw; width:84vw; margin-left:8vw; border-top: 0.3vw solid black; border-color: black;"></div>
+
+            <div class="add_new_started_button" id="add_new_number_started_button" onclick="next_question(2)">
+                <div class="add_new_answer_text" id="add_new_answer_text">Следующий</div>
+                <div class="add_new_answer_next" id="add_new_answer_next"></div>
+            </div>
+        </div>
+
+        <!-- Панель свободного ответа при прохождении -->
+        <div id="transparent_plate_sit" class="transparent_plate_da"></div>
+        <div id="test_bottom_panel_sit_started" class="test_bottom_panel_da_answer">
+            <div style="height: 8vw;"></div>
+            <div class="nazvanie_label_variant_started" id="nazvanie_label_da_answer">Вы правильно ответили на вопрос?</div>
+
+            <div style="height: 6vw;"></div>
+
+            <button class="i_was_right" id="i_was_right" onclick="i_was_right()">Да</button>
+            <button class="i_was_wrong" id="i_was_wrong" onclick="i_was_wrong()">Нет</button>
+
+            <!-- <div style="height: 12vw;"></div> -->
+            
+<!--             <button id="quest_panel_bottom_mix_back" class="quest_panel_bottom_mix_back" onclick="questListBack()"></button> -->
+        </div>
+
+        <!-- блок нижней панели подведения итогов теста -->
+        <div id="quest_bottom_panel_test_end" class="quest_bottom_panel_test">
+            <div style="height:3.5vh;"></div>
+            <button class="quest_panel_button_create_question_wide_test" id="quest_panel_button_create_question_wide_test_end" onclick="close_test()">
+                Закрыть
+                <div class="quest_panel_button_create_question_plus_test_end" id="quest_panel_button_create_question_plus_test"></div>
+            </button>
+        </div>
+
+        <!-- панель показа правильности данных ответов (текстовый или числовой ответ) -->
+        <div id="answer_bottom_panel_quest_real" class="answer_bottom_panel_quest_real">
+
+            <div class="question_again" id="question_again" onclick="show_me_the_question_again()"></div>
+            <div class="question_again_next" id="question_again_next" onclick="show_me_the_question_again()"></div>
+
+            <div class="question_again_your_label" id="question_again_your_label">Ваш ответ:</div>
+            <div class="question_again_your" id="question_again_your">Василий</div>
+
+            <div class="question_again_real_label" id="question_again_real_label">Правильный ответ:</div>
+            <div class="question_again_real" id="question_again_real">Какой Василий?</div>
+
+            <button class="question_again_back" id="question_again_back" onclick="question_again_back_func()">
+                Скрыть ответ
+                <div class="question_again_back_arrow" id="question_again_back_arrow"></div>
+            </button>
+        </div>
+
+        <!-- панель показа правильности данных ответов (без ответа) -->
+        <div id="answer_bottom_panel_quest_real_no" class="answer_bottom_panel_quest_real">
+
+            <div class="question_again" id="question_again_no" onclick="show_me_the_question_again()"></div>
+            <div class="question_again_next" id="question_again_next"></div>
+
+            <div class="question_again_your_label" id="question_again_your_label">Свободный ответ</div>
+            <div class="question_again_your_no" id="question_again_your_no">Вы ответили правильно</div>
+
+            <button class="question_again_back_no" id="question_again_back_no" onclick="question_again_back_func()">
+                Скрыть ответ
+                <div class="question_again_back_arrow" id="question_again_back_arrow"></div>
+            </button>
+        </div>
+
+        <!-- панель показа правильности данных ответов (варианты ответа) -->
+        <div id="answer_bottom_panel_quest_real_var" class="answer_bottom_panel_quest_real">
+
+            <div class="question_again" id="question_again_var" onclick="show_me_the_question_again()">Если бы у енота не было фагота</div>
+            <div class="question_again_next" id="question_again_next"></div>
+
+            <div style="height:2vw; width:84vw; margin-left:8vw; border-bottom: 0.3vw solid black; border-color: black;"></div>            
+
+            <div class="variants_space_again" id="variants_space_again"></div>
+
+            <div style="height:5vw; width:84vw; margin-left:8vw; border-top: 0.3vw solid black; border-color: black;"></div>
+
+            <button class="question_again_back_var" id="question_again_back_var" onclick="question_again_back_func()">
+                Скрыть ответ
+                <div class="question_again_back_arrow" id="question_again_back_arrow"></div>
+            </button>
+        </div>
+
+        <!-- блок нижней панели просмотра вопроса пройденного теста -->
+        <div id="quest_bottom_panel_test_and_again" class="quest_bottom_panel_test">
+            <div style="height:3.5vh;"></div>
+            <button id="quest_panel_bottom_list_back" class="quest_panel_bottom_list_back" onclick="show_me_the_question_again_back()"></button>
+        </div>
+
+
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/Toast.js"></script>
     </body>
 </html>
