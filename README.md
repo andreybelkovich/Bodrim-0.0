@@ -1,7 +1,7 @@
 <img src="/imgs/ad1.png" width="700"/>
 
 # Мобильное приложение для создания тестов<br/><br/>Mobile application for creating your own tests
-01.09.2020 - 01.12.2020 [![Generic badge](https://img.shields.io/badge/Status-Closed-red.svg)](https://shields.io/)<br/>
+01.09.2020 - 01.12.2020  [![Generic badge](https://img.shields.io/badge/Status-Closed-red.svg)](https://shields.io/)<br/>
 
 Разработчик:
 1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human)
