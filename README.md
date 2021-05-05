@@ -1,8 +1,6 @@
-# Bodrim - быстрое создание тестов
+<img src="/imgs/ad1.png" width="600"/>
 
-<img src="/imgs/ad1.png" width="700"/>
-
-## Мобильное приложение для создания тестов<br/><br/>Mobile application for creating your own tests
+# Мобильное приложение для создания тестов<br/><br/>Mobile application for creating your own tests
 
 *Bodrim позволяет в несколько нажатий создавать тесты для самопроверки*
 
