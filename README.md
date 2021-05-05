@@ -1,4 +1,4 @@
-<img src="/imgs/ad1.png" width="600"/>
+<img src="/imgs/ad1.png" width="700"/>
 
 # Мобильное приложение для создания тестов<br/><br/>Mobile application for creating your own tests
 
@@ -15,3 +15,6 @@
  - выбор одного или нескольких вариантов ответа
 
 3. Проходите тесты, и усваивайте знания легко с Bodrim
+
+<br/><br/>
+## Давайте создадим тест
