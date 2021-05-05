@@ -2,7 +2,7 @@
 
 # Мобильное приложение для создания тестов<br/><br/>Mobile application for creating your own tests
 <br/>
-01.09.2020 - 01.12.2020
+01.09.2020 - 01.12.2020<br/>
 Разработчик:
 1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human)
 <br/>
