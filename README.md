@@ -1,5 +1,10 @@
-# Bodrim - быстрое создание тестов
-## Мобильное приложение для создания тестов<br/><br/>Mobile application for creating your own tests
+<img src="/imgs/ad1.png" width="600"/>
+
+# Мобильное приложение для создания тестов<br/><br/>Mobile application for creating your own tests
+
+Разработчик:
+1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human)
+<br/>
 
 *Bodrim позволяет в несколько нажатий создавать тесты для самопроверки*
 
