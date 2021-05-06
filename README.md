@@ -4,7 +4,7 @@
 *01.09.2020 - 01.12.2020*  [![Generic badge](https://img.shields.io/badge/Status-Closed-red.svg)](https://shields.io/)<br/>
 
 *Разработчик/Developer*
-1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human) (20 y.o.)
+1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human)
 <br/>
 
 *Bodrim позволяет в несколько нажатий создавать тесты для самопроверки*
