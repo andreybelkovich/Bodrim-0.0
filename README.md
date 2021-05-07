@@ -1,7 +1,7 @@
 # Мобильное приложение для создания тестов на Cordova<br/><br/>Mobile application for creating your own tests using Cordova
-*01.09.2020 - 01.12.2020*  [![Generic badge](https://img.shields.io/badge/Status-Closed-red.svg)](https://shields.io/)<br/>
-
 <img src="/imgs/ad1.png" width="700"/>
+
+*01.09.2020 - 01.12.2020*  [![Generic badge](https://img.shields.io/badge/Status-Closed-red.svg)](https://shields.io/)<br/>
 
 *Разработчик/Developer*
 1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human)
