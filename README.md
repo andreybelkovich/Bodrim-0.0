@@ -1,4 +1,4 @@
-# Мобильное приложение для создания тестов на Cordova<br/><br/>Mobile application for creating your own tests using Cordova
+# Мобильное приложение для создания тестов на Cordova / Mobile application for creating your own tests using Cordova
 <img src="/imgs/ad1.png" width="700"/>
 
 *01.09.2020 - 01.12.2020*  [![Generic badge](https://img.shields.io/badge/Status-Closed-red.svg)](https://shields.io/)<br/>
