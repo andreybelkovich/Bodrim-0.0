@@ -23,4 +23,4 @@
 
 ## Создание теста 
 
-<img src="/imgs/vid.gif" width="400"/>
+<img src="/imgs/vid.gif" width="250"/>
